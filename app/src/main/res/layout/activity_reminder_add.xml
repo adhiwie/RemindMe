@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:hint="Type your message"
+        android:id="@+id/activity_reminder_add_edittext_reminder_name"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:hint="Enter name of the place"
+        android:id="@+id/activity_reminder_add_edittext_place"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="Save"
+        android:onClick="saveReminder"
+        android:id="@+id/activity_reminder_add_button_save"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_grey" tools:context=".MainActivity">
+
+    <!--
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.9"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frame"></RelativeLayout>
+    -->
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.9"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center_horizontal"
+        android:text="Distance"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:id="@+id/activity_direction_textview_distance"/>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.2"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Reminder name"
+        android:textSize="24dp"
+        android:id="@+id/activity_reminder_detail_textview_reminder_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="WHERE"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Place"
+        android:id="@+id/activity_reminder_detail_textview_place"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="Edit"
+            android:onClick="editReminder"
+            android:id="@+id/activity_reminder_detail_button_edit"/>
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="Delete"
+            android:onClick="deleteReminder"
+            android:id="@+id/activity_reminder_detail_button_delete"/>
+        </LinearLayout>
+
+</LinearLayout>
